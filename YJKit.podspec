@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YJKit'
   s.version          = '0.0.1'
-  s.summary          = '个人常用工具类封装'
+  s.summary          = '这是个人常用工具类封装'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  个人常用工具类封装
+  个人常用工具类封装, This is an accelerated library for app.
   DESC
 
   s.homepage         = 'https://github.com/867991328.com/YJKit'
@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'YJKit/Classes/**/*'
   
+  s.swift_version    = '5.0'
   # s.resource_bundles = {
   #   'YJKit' => ['YJKit/Assets/*.png']
   # }
