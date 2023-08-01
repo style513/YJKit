@@ -5,12 +5,10 @@
 //  Created by yjzheng on 2023/8/1.
 //
 
-import Foundation
 import UIKit
 
 typealias YJ = YJKitManager
 
-/// <#Description#>
 enum YJKitManager {
     static let w = UIScreen.main.bounds.width
     static let h = UIScreen.main.bounds.height
@@ -135,7 +133,7 @@ enum YJKitManager {
     /// 获取顶层控制器根据window
     static func topVC() -> UIViewController? {
         var window = YJKitManager.getKeyWindow()
-
+        
         if window?.windowLevel != UIWindow.Level.normal {
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
                 window = windowScene.windows.first(where: { $0.isKeyWindow })
